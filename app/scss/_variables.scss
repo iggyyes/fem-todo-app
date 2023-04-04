@@ -2,10 +2,19 @@
     //fonts
     --ff:'Josefin Sans', sans-serif;
     //font sizes
+    // 14 16 18 32
+    // 10 12 22
+    --fs-xlarge: 2rem;
+    --fs-large: 1.375rem;
     --fs-body: 1.125rem;
+    --fs-med: 1rem;
+    --fs-small: .875rem;
+    --fs-xsmall: .75rem;
+    --fs-xxsmall: .625rem;
     //font weights
     --fw-reg:400;
     --fw-bold:700;
+    
 
     //colours
     //primary
@@ -13,6 +22,7 @@
     // --checkbox-bg-clr: linear-gradient(to right, var(--aqua) 40%, var(--pink) 60%);
     // --aqua:hsl(192, 100%, 67%);
     // --pink:hsl(280, 87%, 65%);
+
     //light theme
     --VeryLightGray: hsl(0, 0%, 98%);
     --VeryLightGrayishBlue: hsl(236, 33%, 92%);
@@ -50,10 +60,11 @@
     
 }
 
-//finish variables
+
 //look at designs and what needs to be done
 //html markup - write for desktop but css mobile first
 //accessibility of to-do lists 
 //light/dark mode toggle
 //
 //do a google calendar of things we have done and keep at it
+//backlog - that fucking linear gradient
