@@ -18,7 +18,55 @@
     <title>TO-DO APP</title>
   </head>
   <body>
-    <!-- - View the optimal layout for the app depending on their device's screen size
+    <main class="container">
+      <!-- title&dark/light mode -->
+      <section class="header flex">
+        <h1>todo</h1>
+        <button class="toggleButton">narazie nic</button>
+      </section>
+      <!-- TODO APP -->
+      <section class="todo">
+        <!-- new task creator-->
+        <div class="todo__task new">
+          <form action="#" method="GET">
+            <label for="new-todo" class="sr-only">Create a new todo</label>
+            <input
+              type="text"
+              id="new-todo"
+              placeholder="Create a new todo..."
+            />
+            <button class="sr-only">Add a new todo</button>
+          </form>
+        </div>
+        <!-- todo list -->
+        <div class="todo__list">
+          <div class="todo__tasks">
+            <!-- task 1 -->
+            <div class="todo__task">
+              <label for="task1"><span class="custom-checkbox"></span>random text</label>
+              <input type="checkbox" id="task1"/>
+            </div>
+        </div>
+
+        <!-- todo options -->
+        <div class="todo__options">
+          <p class="todo__count">5 items left</p>
+          <div class="todo__filter">
+            <button>All</button>
+            <button>Active</button>
+            <button>Completed</button>
+          </div>
+          <button class="deleteButton">Clear completed</button>
+        </div>
+      </section>
+
+  
+      
+      <!-- <p>Drag and drop to reorder list</p> -->
+    </main>
+
+    <!-- 
+- View the optimal layout for the app depending on their device's screen size
 - See hover states for all interactive elements on the page
 - Add new todos to the list
 - Mark todos as complete
@@ -26,11 +74,11 @@
 - Filter by all/active/complete todos
 - Clear all completed todos
 - Toggle light and dark mode
-- **Bonus**: Drag and drop to reorder items on the list
-    Todo -->
 
-    <!-- Add dynamic number -->
-    items left All Active Completed Clear Completed Drag and drop to reorder
-    list
+- **Bonus**: Drag and drop to reorder items on the list
+    -->
+
+    
+    
   </body>
 </html>
