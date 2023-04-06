@@ -18,50 +18,88 @@
     <title>TO-DO APP</title>
   </head>
   <body>
+    <!-- CSS - MOBILE FIRST/RESPONSIVE/DARK&LIGHT THEMES -->
     <main class="container">
       <!-- title&dark/light mode -->
       <section class="header flex">
         <h1>todo</h1>
-        <button class="toggleButton">narazie nic</button>
+        <button
+          class="themeButton"
+          id="themeButton"
+          title="Toggles light & dark theme"
+          aria-label="auto"
+          aria-live="polite"
+          data-theme="light"
+        ></button>
       </section>
+
       <!-- TODO APP -->
       <section class="todo">
         <!-- new task creator-->
         <div class="todo__task new">
-          <form action="#" method="GET">
+          <form>
             <label for="new-todo" class="sr-only">Create a new todo</label>
             <input
               type="text"
               id="new-todo"
               placeholder="Create a new todo..."
+              aria-label="Create a new todo"
             />
-            <button class="sr-only">Add a new todo</button>
+            <button type="button" class="sr-only" aria-label="Add a new todo">
+              Add
+            </button>
           </form>
         </div>
+
         <!-- todo list -->
         <div class="todo__list">
-          <div class="todo__tasks">
+          <ul class="todo__tasks">
             <!-- task 1 -->
-            <div class="todo__task">
-              <label for="task1"><span class="custom-checkbox"></span>random text</label>
-              <input type="checkbox" id="task1"/>
-            </div>
+            <li class="todo__task">
+              <label for="task1"><span class="custom-checkbox"></span></label>
+              <input type="checkbox" id="task1" aria-checked="false" />Jog
+              around the park 3x
+            </li>
+            <!-- task 2 -->
+            <li class="todo__task">
+              <label for="task2"><span class="custom-checkbox"></span></label>
+              <input type="checkbox" id="task2" aria-checked="false" />10
+              minutes meditation
+            </li>
+            <!-- task 3 -->
+            <li class="todo__task">
+              <label for="task3"><span class="custom-checkbox"></span></label>
+              <input type="checkbox" id="task3" aria-checked="false" />Pick up
+              groceries
+            </li>
+          </ul>
         </div>
 
         <!-- todo options -->
         <div class="todo__options">
           <p class="todo__count">5 items left</p>
-          <div class="todo__filter">
-            <button>All</button>
-            <button>Active</button>
-            <button>Completed</button>
-          </div>
-          <button class="deleteButton">Clear completed</button>
+
+          <button
+            class="deleteButton"
+            type="button"
+            aria-label="Clear completed tasks"
+          >
+            Clear completed
+          </button>
         </div>
+
+        <fieldset class="todo__filter">
+          <label for="all">All</label>
+          <input type="radio" id="all" name="filter" value="all" checked />
+
+          <label for="active">Active</label>
+          <input type="radio" id="active" name="filter" value="active" />
+
+          <label for="completed">Completed</label>
+          <input type="radio" id="completed" name="filter" value="completed" />
+        </fieldset>
       </section>
 
-  
-      
       <!-- <p>Drag and drop to reorder list</p> -->
     </main>
 
@@ -77,8 +115,5 @@
 
 - **Bonus**: Drag and drop to reorder items on the list
     -->
-
-    
-    
   </body>
 </html>

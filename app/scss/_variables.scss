@@ -60,6 +60,42 @@
     
 }
 
+
+// .toggle {
+// position: relative;
+// border: transparent;
+    
+//     & > input:checked::before {
+//        content: '';
+//        position: absolute;
+//        background-color: red;
+//        border-radius: 50%;
+//        background-image: url(/images/icon-moon.svg);
+//        background-repeat: no-repeat;
+//        background-position: center;
+//        width: 3rem;
+//        height: 3rem;
+//        left: 50%;
+//        right: -50%;
+//        top: -50%;
+//     }
+    
+// }
+
+// .test {
+//     content: '';
+//     //    position: absolute;
+//     //    background-color: red;
+//     //    border-radius: 50%;
+//     //    background-image: url(/images/icon-moon.svg);
+//     //    background-repeat: no-repeat;
+//     //    background-position: center;
+//     //    width: 3rem;
+//     //    height: 3rem;
+//     //    left: 50%;
+//     //    right: 50%;
+// }
+
 //rework todo__list semantics - should it be a <ul>?
 //custom checkbox markup
 //markup for drag and reorder option
@@ -78,3 +114,26 @@
 //
 //do a google calendar of things we have done and keep at it
 //backlog - that fucking linear gradient
+
+// .themeButton {
+//     background-image: url(/images/icon-moon.svg);
+//     background-repeat: no-repeat;
+//     height: 2rem;
+//     width: 2rem;
+// }
+
+// button {
+//     background: transparent;
+// }
+
+
+// <!-- <fieldset class="header__toggle toggle" role="radiogroup" aria-label="dark theme & light theme toggle">
+//           <label for="dark" class="sr-only">Dark Mode</label>
+//           <input type="radio" name="theme" id="dark" />
+//           <span aria-hidden="true"></span>
+
+//           <label for="light" class="sr-only">Light Mode</label>
+//           <input type="radio" name="theme" id="light" />
+//           <span aria-hidden="true"></span>
+
+//         </fieldset> -->
