@@ -56,6 +56,7 @@ body {
     max-width: 33.75rem;
     margin: 0 auto;
     padding: 1.5625rem;
+    padding-top: 3rem;
 
     @include breakpoint(large) {
         padding: 0;
