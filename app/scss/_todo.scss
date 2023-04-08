@@ -1,0 +1,29 @@
+@use 'mixins' as *;
+.todo {
+//new task creator
+    &__new-todo input, &__list {
+        background-color: var(--White);
+        border: none;
+        border-radius: .4375rem;
+        padding: 1rem 1.25rem;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    &__new-todo input {
+        // border: none;
+        // border-radius: .4375rem;
+        // padding: 1rem 1.25rem;
+        // width: 100%;
+        // margin-bottom: 1rem;
+    }
+
+    &__new-todo input::placeholder {
+        color: var(--text-clr-light);
+    }
+
+    //todo list
+    &__list {
+
+    }
+}

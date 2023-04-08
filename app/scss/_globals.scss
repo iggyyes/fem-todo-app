@@ -37,7 +37,7 @@ button {
 
 body {
     font-family: var(--ff);
-    font-size: var(--fs-body);
+    font-size: var(--fs-small);
     font-weight: var(--fw-reg);
     line-height: 1.5;
     background-color: var(--bg-clr);
@@ -47,6 +47,10 @@ body {
     background-size: 100%;
 
     @include breakpoint(medium) {
+        font-size: var(--fs-body);
+    }
+
+    @include breakpoint(large) {
         background-image: var(--bg-desktop);
     }
 }

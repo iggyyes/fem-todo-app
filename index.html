@@ -36,7 +36,7 @@
       <!-- TODO APP -->
       <section class="todo">
         <!-- new task creator-->
-        <div class="todo__task new">
+        <div class="todo__new-todo">
           <form>
             <label for="new-todo" class="sr-only">Create a new todo</label>
             <input
@@ -73,19 +73,18 @@
               groceries
             </li>
           </ul>
-        </div>
+          <!-- todo options -->
+          <div class="todo__options flex">
+            <p class="todo__count">5 items left</p>
 
-        <!-- todo options -->
-        <div class="todo__options">
-          <p class="todo__count">5 items left</p>
-
-          <button
-            class="deleteButton"
-            type="button"
-            aria-label="Clear completed tasks"
-          >
-            Clear completed
-          </button>
+            <button
+              class="deleteButton"
+              type="button"
+              aria-label="Clear completed tasks"
+            >
+              Clear completed
+            </button>
+          </div>
         </div>
 
         <fieldset class="todo__filter">
