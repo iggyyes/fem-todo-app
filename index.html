@@ -55,10 +55,13 @@
         <div class="todo__list">
           <ul class="todo__tasks">
             <!-- task 1 -->
-            <li class="todo__task">
-              <label for="task1"><span class="custom-checkbox"></span></label>
-              <input type="checkbox" id="task1" aria-checked="false" />Jog
-              around the park 3x
+            <li class="todo__task flex">
+              <label for="task1"
+                ><span class="custom-checkbox"></span>Jog around the park
+                3x</label
+              >
+              <!-- added ability to click on label to check/uncheck - make sure it doesn't cause problems later -->
+              <input type="checkbox" id="task1" aria-checked="false" />
             </li>
             <!-- task 2 -->
             <li class="todo__task">
