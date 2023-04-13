@@ -21,7 +21,7 @@
     <!-- CSS - MOBILE FIRST/RESPONSIVE/DARK&LIGHT THEMES -->
     <main class="container">
       <!-- title&dark/light mode -->
-      <section class="header flex">
+      <section class="header flex jc-sb">
         <h1 class="header__title">todo</h1>
         <button
           class="header__toggle themeButton"
@@ -56,13 +56,23 @@
           <ul class="todo__tasks">
             <!-- task 1 -->
             <li class="todo__task flex">
-              <label for="task1"
-                ><span class="custom-checkbox"></span>Jog around the park
-                3x</label
+              <input
+                type="checkbox"
+                class="sr-only"
+                id="task1"
+                aria-checked="false"
+              />
+              <label class="customCheckbox" for="task1"
+                ><span class="eraseTask"></span> Jog around the park 3x</label
               >
-              <!-- added ability to click on label to check/uncheck - make sure it doesn't cause problems later -->
-              <input type="checkbox" id="task1" aria-checked="false" />
+
+              <button
+                type="button"
+                class="deleteButton"
+                aria-label="Delete todo task"
+              ></button>
             </li>
+
             <!-- task 2 -->
             <li class="todo__task">
               <label for="task2"><span class="custom-checkbox"></span></label>
@@ -77,11 +87,11 @@
             </li>
           </ul>
           <!-- todo options -->
-          <div class="todo__options flex">
+          <div class="todo__options flex jc-sb">
             <p class="todo__count">5 items left</p>
 
             <button
-              class="deleteButton"
+              class="clearButton"
               type="button"
               aria-label="Clear completed tasks"
             >

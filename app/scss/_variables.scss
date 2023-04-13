@@ -19,9 +19,9 @@
     //colours
     //primary
     --accent-clr-BrightBlue: hsl(220, 98%, 61%);
-    // --checkbox-bg-clr: linear-gradient(to right, var(--aqua) 40%, var(--pink) 60%);
-    // --aqua:hsl(192, 100%, 67%);
-    // --pink:hsl(280, 87%, 65%);
+    --gradient-clrs: hsl(192, 100%, 67%), hsl(280, 87%, 65%);
+    --checkbox-bg-clr: linear-gradient(135deg, var(--gradient-clrs));
+    
 
     //light theme
     --VeryLightGray: hsl(0, 0%, 98%);
