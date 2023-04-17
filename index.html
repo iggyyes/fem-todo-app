@@ -34,20 +34,28 @@
       </section>
 
       <!-- TODO APP -->
-      <section class="todo">
+      <section class="todo flex">
         <!-- new task creator-->
         <div class="todo__new-todo">
-          <form>
+          <form class="flex" id="task-form">
+            <div class="customCheckIcon"></div>
             <label for="new-todo" class="sr-only">Create a new todo</label>
-            <input
-              type="text"
+            <textarea
               id="new-todo"
+              name="new-todo"
+              rows="1"
+              aria-describedby="input-helper"
               placeholder="Create a new todo..."
-              aria-label="Create a new todo"
-            />
-            <button type="button" class="sr-only" aria-label="Add a new todo">
-              Add
-            </button>
+              onkeydown="checkEnter(event)"
+            ></textarea>
+            <button
+              id="submit-btn"
+              type="submit"
+              tabindex="-1"
+              aria-hidden="true"
+            ></button>
+
+            <span id="input-helper" class="sr-only"></span>
           </form>
         </div>
 
@@ -62,28 +70,73 @@
                 id="task1"
                 aria-checked="false"
               />
-              <label class="customCheckbox" for="task1"
-                ><span class="eraseTask"></span> Jog around the park 3x</label
-              >
+
+              <label class="customCheckbox" for="task1" aria-checked="false">
+                <textarea
+                  class="taskDescription"
+                  id="taskDescription1"
+                  contenteditable="true"
+                  rows="1"
+                  aria-label="Task 1 description"
+                  aria-describedby="input-helper"
+                >
+Jog around the park 3x</textarea
+                >
+                <!-- <span class="strikeTask" aria-hidden="true"></span> -->
+              </label>
 
               <button
                 type="button"
                 class="deleteButton"
                 aria-label="Delete todo task"
               ></button>
+
+              <span id="input-helper" class="sr-only"></span>
             </li>
 
-            <!-- task 2 -->
+            <!-- task 2
             <li class="todo__task">
               <label for="task2"><span class="custom-checkbox"></span></label>
               <input type="checkbox" id="task2" aria-checked="false" />10
               minutes meditation
             </li>
-            <!-- task 3 -->
-            <li class="todo__task">
+            < task 3 -->
+            <!-- <li class="todo__task">
               <label for="task3"><span class="custom-checkbox"></span></label>
               <input type="checkbox" id="task3" aria-checked="false" />Pick up
               groceries
+            </li> -->
+
+            <!-- task 2 -->
+            <li class="todo__task flex">
+              <input
+                type="checkbox"
+                class="sr-only"
+                id="task2"
+                aria-checked="false"
+              />
+
+              <label class="customCheckbox" for="task2" aria-checked="false">
+                <textarea
+                  class="taskDescription"
+                  id="taskDescription2"
+                  contenteditable="true"
+                  rows="1"
+                  aria-label="Task 2 description"
+                  aria-describedby="input-helper"
+                >
+Jog around the park 3x</textarea
+                >
+                <!-- <span class="strikeTask" aria-hidden="true"></span> -->
+              </label>
+
+              <button
+                type="button"
+                class="deleteButton"
+                aria-label="Delete todo task"
+              ></button>
+
+              <span id="input-helper" class="sr-only"></span>
             </li>
           </ul>
           <!-- todo options -->
@@ -95,20 +148,47 @@
               type="button"
               aria-label="Clear completed tasks"
             >
-              Clear completed
+              Clear Completed
             </button>
           </div>
         </div>
 
-        <fieldset class="todo__filter">
+        <fieldset class="todo__filter flex">
+          <legend class="sr-only">Todo list filter options</legend>
+
+          <input
+            type="radio"
+            class="sr-only"
+            id="all"
+            name="filter"
+            value="all"
+            aria-checked="true"
+            tabindex="0"
+            checked
+          />
           <label for="all">All</label>
-          <input type="radio" id="all" name="filter" value="all" checked />
 
+          <input
+            type="radio"
+            class="sr-only"
+            id="active"
+            name="filter"
+            value="active"
+            aria-checked="false"
+            tabindex="0"
+          />
           <label for="active">Active</label>
-          <input type="radio" id="active" name="filter" value="active" />
 
+          <input
+            type="radio"
+            class="sr-only"
+            id="completed"
+            name="filter"
+            value="completed"
+            aria-checked="false"
+            tabindex="0"
+          />
           <label for="completed">Completed</label>
-          <input type="radio" id="completed" name="filter" value="completed" />
         </fieldset>
       </section>
 
