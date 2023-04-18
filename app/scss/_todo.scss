@@ -18,7 +18,7 @@
         width: 1.375rem;
         height: 1.375rem;
         background: var(--list-bg-clr);
-        border: 1px solid var(--VeryLightGrayishBlue);
+        border: 1px solid var(--accent-clr-Gray);
         border-radius: 100%;
 
         @include breakpoint(medium) {
@@ -118,7 +118,7 @@
         left: 0;
         top: 0;
         height: 1px;
-        background: currentColor;
+        background: var(--text-clr-filter);;
         opacity: .1;
     }
 
@@ -143,7 +143,7 @@
         display: none;
         
     }
-
+    
 
     &__task {
         justify-content: space-between;
@@ -169,7 +169,7 @@
             width: 1.375rem;
             height: 1.375rem;
             background: var(--list-bg-clr);
-            border: 1px solid var(--VeryLightGrayishBlue);
+            border: 1px solid var(--accent-clr-Gray);
             border-radius: 100%;
             margin-right: .8125rem;
             
@@ -294,12 +294,13 @@
 
     &__options {
         // position: relative;
+        color: var(--text-clr-filter);
     }
 
     &__filter {
         justify-content: center;
         background: var(--list-bg-clr);
-        color: var(--text-clr-light);
+        color: var(--text-clr-filter);
         padding: 1rem 0 0.8125rem 0;
         border: transparent;
         border-radius: .4375rem;

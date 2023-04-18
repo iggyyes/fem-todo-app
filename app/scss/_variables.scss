@@ -42,6 +42,8 @@
     --VeryDarkGrayishBlue: hsl(237, 14%, 26%);
 }
 
+
+
 :root[data-theme="light"] {
     --bg-clr: var(--VeryLightGray);
     --list-bg-clr: var(--White);
@@ -49,10 +51,13 @@
     --text-clr-xlight: var(--LightGrayishBlue);
     --text-clr-light: var(--DarkGrayishBlue);
     --text-clr: var(--VeryDarkGrayishBlue);
+    --text-clr-filter: var(--text-clr-light);
 
     --bg-mobile: url(/images/bg-mobile-light.jpg) ;
     --bg-desktop: url(/images/bg-desktop-light.jpg) ;
     --themeToggle: url(/images/icon-moon.svg) ;
+
+    --accent-clr-Gray: var(--VeryLightGrayishBlue);
     
 }
 
@@ -61,12 +66,15 @@
     --list-bg-clr: var(--VeryDarkDesaturatedBlue);
 
     --text-clr-xlight: var(--DarkGrayishBlue);
-    --text-clr-light: var(--LightGrayishBlue);
+    --text-clr-light: var(--VeryDarkGrayishBlue);
     --text-clr: var(--LightGrayishBlue-hover);
+    --text-clr-filter: var(--DarkGrayishBlue);
 
     --bg-mobile: url(/images/bg-mobile-dark.jpg) ;
     --bg-desktop: url(/images/bg-desktop-dark.jpg) ;
     --themeToggle: url(/images/icon-sun.svg) ;
+
+    --accent-clr-Gray: var(--VeryDarkGrayishBlue);
     
 }
 
@@ -78,10 +86,13 @@
         --text-clr-xlight: var(--DarkGrayishBlue);
         --text-clr-light: var(--LightGrayishBlue);
         --text-clr: var(--LightGrayishBlue-hover);
+        --text-clr-filter: var(--DarkGrayishBlue);
     
         --bg-mobile: url(/images/bg-mobile-dark.jpg) ;
         --bg-desktop: url(/images/bg-desktop-dark.jpg) ;
         --themeToggle: url(/images/icon-sun.svg) ;
+
+        --accent-clr-Gray: var(--VeryDarkGrayishBlue);
         
     }
 }
