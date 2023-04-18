@@ -35,7 +35,7 @@
 
     //only for layout rn - move to a different partial later
     .themeButton {
-        background-image: url(/images/icon-moon.svg);
+        background-image: var(--themeToggle);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;

@@ -52,6 +52,7 @@
 
     --bg-mobile: url(/images/bg-mobile-light.jpg) ;
     --bg-desktop: url(/images/bg-desktop-light.jpg) ;
+    --themeToggle: url(/images/icon-moon.svg) ;
     
 }
 
@@ -65,7 +66,24 @@
 
     --bg-mobile: url(/images/bg-mobile-dark.jpg) ;
     --bg-desktop: url(/images/bg-desktop-dark.jpg) ;
+    --themeToggle: url(/images/icon-sun.svg) ;
     
+}
+
+@media (prefers-color-scheme:dark) {
+    :root[data-theme="dark"] {
+        --bg-clr: var(--VeryDarkBlue);
+        --list-bg-clr: var(--VeryDarkDesaturatedBlue);
+    
+        --text-clr-xlight: var(--DarkGrayishBlue);
+        --text-clr-light: var(--LightGrayishBlue);
+        --text-clr: var(--LightGrayishBlue-hover);
+    
+        --bg-mobile: url(/images/bg-mobile-dark.jpg) ;
+        --bg-desktop: url(/images/bg-desktop-dark.jpg) ;
+        --themeToggle: url(/images/icon-sun.svg) ;
+        
+    }
 }
 
 
