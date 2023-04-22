@@ -74,7 +74,7 @@ window.addEventListener('load', () => {
       taskItem.classList.add(taskItemClass, 'flex');
       taskItem.draggable = true; // enable dragging
 
-      //DRAG AND DROP
+      //DRAG AND DROPf
       taskItem.addEventListener('dragstart', () => {
         draggedItem = task;
         taskItem.classList.add('dragged');
