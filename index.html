@@ -41,18 +41,11 @@
             <label for="new-todo" class="sr-only">Create a new todo</label>
             <textarea
               id="new-todo"
-              name="new-todo"
+              name="content"
               rows="1"
               aria-describedby="input-helper"
               placeholder="Create a new todo..."
-              onkeydown="checkEnter(event)"
             ></textarea>
-            <button
-              id="submit-btn"
-              type="submit"
-              tabindex="-1"
-              aria-hidden="true"
-            ></button>
 
             <span id="input-helper" class="sr-only"></span>
           </form>
@@ -62,7 +55,7 @@
         <div class="todo__list">
           <ul class="todo__tasks">
             <!-- task 1 -->
-            <li class="todo__task flex">
+            <!-- <li class="todo__task flex">
               <input
                 type="checkbox"
                 class="sr-only"
@@ -81,7 +74,7 @@
                 >
 Jog around the park 3x</textarea
                 >
-                <!-- <span class="strikeTask" aria-hidden="true"></span> -->
+                
               </label>
 
               <button
@@ -91,56 +84,11 @@ Jog around the park 3x</textarea
               ></button>
 
               <span id="input-helper" class="sr-only"></span>
-            </li>
-
-            <!-- task 2
-            <li class="todo__task">
-              <label for="task2"><span class="custom-checkbox"></span></label>
-              <input type="checkbox" id="task2" aria-checked="false" />10
-              minutes meditation
-            </li>
-            < task 3 -->
-            <!-- <li class="todo__task">
-              <label for="task3"><span class="custom-checkbox"></span></label>
-              <input type="checkbox" id="task3" aria-checked="false" />Pick up
-              groceries
             </li> -->
-
-            <!-- task 2 -->
-            <li class="todo__task flex">
-              <input
-                type="checkbox"
-                class="sr-only"
-                id="task2"
-                aria-checked="false"
-              />
-
-              <label class="customCheckbox" for="task2" aria-checked="false">
-                <textarea
-                  class="taskDescription"
-                  id="taskDescription2"
-                  contenteditable="true"
-                  rows="1"
-                  aria-label="Task 2 description"
-                  aria-describedby="input-helper"
-                >
-Jog around the park 3x</textarea
-                >
-                <!-- <span class="strikeTask" aria-hidden="true"></span> -->
-              </label>
-
-              <button
-                type="button"
-                class="deleteButton"
-                aria-label="Delete todo task"
-              ></button>
-
-              <span id="input-helper" class="sr-only"></span>
-            </li>
           </ul>
           <!-- todo options -->
           <div class="todo__options flex jc-sb">
-            <p class="todo__count">5 items left</p>
+            <p class="todo__count" id="todoTaskCount">list is empty</p>
 
             <button
               class="clearButton"
