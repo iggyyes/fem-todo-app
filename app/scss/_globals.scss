@@ -1,0 +1,118 @@
+@use 'mixins' as *;
+//general reset
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+a, a:visited, a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+ul, li {
+    list-style: none;
+}
+
+button {
+    background: transparent;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+body {
+    font-family: var(--ff);
+    font-size: var(--fs-small);
+    font-weight: var(--fw-reg);
+    line-height: 1.5;
+    background-color: var(--bg-clr);
+    color: var(--text-clr);
+    background-image: var(--bg-mobile);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    @include breakpoint(medium) {
+        font-size: var(--fs-body);
+    }
+
+    @include breakpoint(large) {
+        background-image: var(--bg-desktop);
+    }
+}
+
+// util
+.container {
+    max-width: 33.75rem;
+    margin: 0 auto;
+    padding: 1.5625rem;
+    padding-top: 3rem;
+
+    @include breakpoint(large) {
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        margin-top: 80px;
+    }
+}
+
+.flex {
+    display: flex;
+}
+.jc-sb {
+    justify-content: space-between;
+}
+
+//accessibility
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+     scroll-behavior: auto;
+    }
+    
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+} 
+
+//COMPONENTS
+
+
+//css 
+//finish responsive layout
+//hover/active states
+
+//javascript
+//todo list functionality
+//dark/light mode

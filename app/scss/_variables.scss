@@ -1,0 +1,132 @@
+:root {
+    //fonts
+    --ff:'Josefin Sans', sans-serif;
+    //font sizes
+    // 14 16 18 32
+    // 10 12 22
+    --fs-xlarge: 2.5rem;
+    --fs-large: 1.375rem;
+    --fs-body: 1.125rem;
+    --fs-med: 1rem;
+    --fs-small: .875rem;
+    --fs-xsmall: .75rem;
+    --fs-xxsmall: .625rem;
+    //font weights
+    --fw-reg:400;
+    --fw-bold:700;
+    
+
+    //colours
+    //primary
+    --accent-clr-BrightBlue: hsl(220, 98%, 61%);
+    --gradient-clrs: hsl(192, 100%, 67%), hsl(280, 87%, 65%);
+    --checkbox-bg-clr: linear-gradient(135deg, var(--gradient-clrs));
+    --focus-clr-pink:hsl(280, 87%, 65%);
+    
+
+    //light theme
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --VeryLightGrayishBlue: hsl(236, 33%, 92%);
+    --LightGrayishBlue: hsl(233, 11%, 84%);
+    --DarkGrayishBlue: hsl(236, 9%, 61%);
+    --VeryDarkGrayishBlue: hsl(235, 19%, 35%);
+    --White:  hsl(0, 0%, 100%);
+
+    //dark theme
+    --VeryDarkBlue: hsl(235, 21%, 11%);
+    --VeryDarkDesaturatedBlue: hsl(235, 24%, 19%);
+    --LightGrayishBlue: hsl(234, 39%, 85%);
+    --LightGrayishBlue-hover: hsl(236, 33%, 92%);
+    --DarkGrayishBlue: hsl(234, 11%, 52%);
+    --VeryDarkGrayishBlue: hsl(233, 14%, 35%);
+    --VeryDarkGrayishBlue: hsl(237, 14%, 26%);
+}
+
+
+
+:root[data-theme="light"] {
+    --bg-clr: var(--VeryLightGray);
+    --list-bg-clr: var(--White);
+
+    --text-clr-xlight: var(--LightGrayishBlue);
+    --text-clr-light: var(--DarkGrayishBlue);
+    --text-clr: var(--VeryDarkGrayishBlue);
+    --text-clr-filter: var(--text-clr-light);
+
+    --bg-mobile: url(/images/bg-mobile-light.jpg) ;
+    --bg-desktop: url(/images/bg-desktop-light.jpg) ;
+    --themeToggle: url(/images/icon-moon.svg) ;
+
+    --accent-clr-Gray: var(--VeryLightGrayishBlue);
+    
+}
+
+:root[data-theme="dark"] {
+    --bg-clr: var(--VeryDarkBlue);
+    --list-bg-clr: var(--VeryDarkDesaturatedBlue);
+
+    --text-clr-xlight: var(--DarkGrayishBlue);
+    --text-clr-light: var(--VeryDarkGrayishBlue);
+    --text-clr: var(--LightGrayishBlue-hover);
+    --text-clr-filter: var(--DarkGrayishBlue);
+
+    --bg-mobile: url(/images/bg-mobile-dark.jpg) ;
+    --bg-desktop: url(/images/bg-desktop-dark.jpg) ;
+    --themeToggle: url(/images/icon-sun.svg) ;
+
+    --accent-clr-Gray: var(--VeryDarkGrayishBlue);
+    
+}
+
+@media (prefers-color-scheme:dark) {
+    :root[data-theme="dark"] {
+        --bg-clr: var(--VeryDarkBlue);
+        --list-bg-clr: var(--VeryDarkDesaturatedBlue);
+    
+        --text-clr-xlight: var(--DarkGrayishBlue);
+        --text-clr-light: var(--LightGrayishBlue);
+        --text-clr: var(--LightGrayishBlue-hover);
+        --text-clr-filter: var(--DarkGrayishBlue);
+    
+        --bg-mobile: url(/images/bg-mobile-dark.jpg) ;
+        --bg-desktop: url(/images/bg-desktop-dark.jpg) ;
+        --themeToggle: url(/images/icon-sun.svg) ;
+
+        --accent-clr-Gray: var(--VeryDarkGrayishBlue);
+        
+    }
+}
+
+
+
+
+//rework todo__list semantics - should it be a <ul>?
+//custom checkbox markup
+//markup for drag and reorder option
+//
+//rework todo__filter - should it be a checkbox form <ul>? 
+
+//body background
+//html markup 
+//dark/light mode toggle(?) button
+
+
+//look at designs and what needs to be done
+//html markup - write for desktop but css mobile first
+//accessibility of to-do lists 
+//light/dark mode toggle
+//
+//do a google calendar of things we have done and keep at it
+//backlog - that fucking linear gradient
+
+
+// <!-- <fieldset class="header__toggle toggle" role="radiogroup" aria-label="dark theme & light theme toggle">
+//           <label for="dark" class="sr-only">Dark Mode</label>
+//           <input type="radio" name="theme" id="dark" />
+//           <span aria-hidden="true"></span>
+
+//           <label for="light" class="sr-only">Light Mode</label>
+//           <input type="radio" name="theme" id="light" />
+//           <span aria-hidden="true"></span>
+
+//         </fieldset> -->
